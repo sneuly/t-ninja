@@ -9,11 +9,8 @@ namespace TestNinja.UnitTests
         private Math _math;
 
         [SetUp]
-        public void SetUp()
-        {
-            _math = new Math();
-        }
-
+        public void SetUp() => _math = new Math();
+        
         [Test]
         [Ignore("Cause I wanted to")]
         public void Add_WhenCalled_ReturnTheSumOfArguments()

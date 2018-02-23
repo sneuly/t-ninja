@@ -10,10 +10,7 @@ namespace TestNinja.UnitTests
         private CustomerController _controller;
 
         [SetUp]
-        public void SetUp()
-        {
-            _controller = new CustomerController();
-        }
+        public void SetUp() => _controller = new CustomerController();
         
         [Test]
         public void GetCustomer_IdIsZero_ReturnNotFound()
