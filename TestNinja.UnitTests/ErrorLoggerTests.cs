@@ -14,7 +14,9 @@ namespace TestNinja.UnitTests
         [Test]
         public void Log_WhenCalled_SetTheLastErrorProperty()
         {
+            _logger.Log("a");
             
+            Assert.That(_logger.LastError, Is.EqualTo("a"));
         }
     }
 }

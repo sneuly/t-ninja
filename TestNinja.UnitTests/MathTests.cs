@@ -15,7 +15,6 @@ namespace TestNinja.UnitTests
         [Ignore("Cause I wanted to")]
         public void Add_WhenCalled_ReturnTheSumOfArguments()
         {
-
             var result = _math.Add(1, 2);
 
             Assert.That(result, Is.EqualTo(3));
